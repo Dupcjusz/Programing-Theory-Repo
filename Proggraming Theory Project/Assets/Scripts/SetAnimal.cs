@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class SetAnimal : MonoBehaviour
 {
-    public static string animal { get; private set; }
+    public static string animal { get; private set; } //ENCAPSULATION
 
     public void penguin(){
         animal = "penguin";

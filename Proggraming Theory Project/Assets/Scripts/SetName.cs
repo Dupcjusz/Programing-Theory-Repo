@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,17 +8,17 @@ using UnityEngine.UI;
 
 public class SetName : MonoBehaviour
 {
-    public InputField inputField;
-    public static string animalName { get; set; }
+    public InputField iField;
+    public static string animalName { get; private set; } //ENCAPSULATION
 
 
     public void StartGame(){
         SceneManager.LoadScene(3);
 
-        SetTheText();
+        SetTheText(); //ABSTRACTION
     }
 
     public void SetTheText(){
-        animalName = inputField.text;
+        animalName = iField.text;
     }
 }
